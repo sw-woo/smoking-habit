@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(npm create:*)",
+      "Bash(where npm:*)",
+      "Bash(where:*)",
+      "Bash(cmd /c \"where npm\")",
+      "Bash(powershell -Command \"Get-Command npm -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Source\")",
+      "Bash(powershell -Command \"Get-Command node -ErrorAction SilentlyContinue\")",
+      "Bash(powershell -Command \"Test-Path ''C:\\Program Files\\nodejs\\npm.cmd''\")",
+      "Bash(powershell -Command:*)",
+      "Bash(dir \"C:\\Program Files\")",
+      "Bash(findstr:*)",
+      "Bash(dir \"%USERPROFILE%\\AppData\\Roaming\\nvm\")",
+      "Bash(curl:*)",
+      "Bash(powershell \"[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; $temp = $env:TEMP; (New-Object Net.WebClient).DownloadFile(''https://github.com/coreybutler/nvm-windows/releases/download/1.1.12/nvm-setup.exe'', \"\"$temp\\nvm-setup.exe\"\"); Write-Host \"\"Downloaded to $temp\\nvm-setup.exe\"\"\")",
+      "Bash(powershell -NoProfile -ExecutionPolicy Bypass -Command \"$ProgressPreference = ''SilentlyContinue''; [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-RestMethod -Uri ''https://github.com/coreybutler/nvm-windows/releases/download/1.1.12/nvm-setup.exe'' -OutFile ''C:\\Users\\Public\\nvm-setup.exe''; Write-Host ''Downloaded to C:\\Users\\Public\\nvm-setup.exe''\")",
+      "Bash(dir \"C:\\Users\\Public\\nvm-setup.exe\")",
+      "Bash(start \"\" \"C:\\Users\\Public\\nvm-setup.exe\")",
+      "Bash(powershell -NoProfile -Command \"refreshenv; nvm install 22; nvm use 22\")",
+      "Bash(\"%APPDATA%\\nvm\\nvm.exe\" install 22)",
+      "Bash(cmd /c \"C:\\Users\\바이오컴\\AppData\\Roaming\\nvm\\nvm.exe install 22\")",
+      "Bash(powershell -NoProfile -Command:*)",
+      "Bash(dir:*)",
+      "Bash(npm install)",
+      "Bash(npm run build:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}
